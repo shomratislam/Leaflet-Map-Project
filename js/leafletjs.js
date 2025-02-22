@@ -14,28 +14,12 @@ attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright"
 });
 
 
-// Stadia.AlidadeSmoothDark
-var Stadia_AlidadeSmoothDark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
-minZoom: 0,
-maxZoom: 20,
-attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-ext: 'png'
-});
-
-
 // GoogleStreets
 var googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
 maxZoom: 20,
 subdomains:['mt0','mt1','mt2','mt3']
 });
 
-// Stadia_AlidadeSatellite
-var Stadia_AlidadeSatellite = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.{ext}', {
-minZoom: 0,
-maxZoom: 20,
-attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-ext: 'jpg'
-});
 
 // Marker
 var myIcon = L.icon({
@@ -75,9 +59,7 @@ style: {
 var baseMaps = {
 "Osm map": osm,
 "OpenTopoMap": OpenTopoMap,
-"Stadia.AlidadeSmoothDark": Stadia_AlidadeSmoothDark,
 "GoogleStreets": googleStreets,
-"Stadia_AlidadeSatellite": Stadia_AlidadeSatellite,
 };
 
 var overlayMaps = {
